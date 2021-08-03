@@ -47,7 +47,11 @@ class _HomeScreenState extends State<HomeScreen> {
         },
       ),
       bottomNavigationBar: RandomBottomNavBar(),
-      floatingActionButton: RandomFloatingButton(),
+      floatingActionButton: RandomFloatingButton(
+        onpress: () {
+          Provider.of<RandomController>(context, listen: false).randomColor();
+        },
+      ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }

@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 class RandomFloatingButton extends StatelessWidget {
+  final Function() onpress;
+
+  const RandomFloatingButton({Key key, this.onpress}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -10,7 +13,7 @@ class RandomFloatingButton extends StatelessWidget {
         child: FloatingActionButton(
           backgroundColor: Colors.white,
           elevation: 30,
-          onPressed: () {},
+          onPressed: onpress,
           child: Image.asset(
             'assets/icons/001-random.png',
             scale: 2,

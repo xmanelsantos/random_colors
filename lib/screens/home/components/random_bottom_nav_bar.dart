@@ -6,8 +6,8 @@ class RandomBottomNavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.only(
-        left: kDefaultPadding * 2,
-        right: kDefaultPadding * 2,
+        left: kDefaultPadding * 3,
+        right: kDefaultPadding * 3,
       ),
       height: 60,
       decoration: const BoxDecoration(
@@ -26,11 +26,11 @@ class RandomBottomNavBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           IconButton(
-            icon: const Icon(Icons.list),
+            icon: Image.asset('assets/icons/002-paper.png'),
             onPressed: () {},
           ),
           IconButton(
-            icon: const Icon(Icons.person),
+            icon: Image.asset('assets/icons/004-man.png'),
             onPressed: () {},
           )
         ],
