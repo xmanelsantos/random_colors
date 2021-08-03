@@ -5,6 +5,7 @@ import 'package:random_colors/controller/random_controller.dart';
 
 import 'components/random_bottom_nav_bar.dart';
 import 'components/random_button.dart';
+import 'components/random_floating_button.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -16,6 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        brightness: Brightness.light,
         title: Text(
           'Random Colors',
           style: GoogleFonts.lato(
@@ -45,6 +47,8 @@ class _HomeScreenState extends State<HomeScreen> {
         },
       ),
       bottomNavigationBar: RandomBottomNavBar(),
+      floatingActionButton: RandomFloatingButton(),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }
