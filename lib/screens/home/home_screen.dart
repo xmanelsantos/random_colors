@@ -28,9 +28,9 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
         elevation: 0,
-        backgroundColor: kPrimaryColor,
+        backgroundColor: Provider.of<RandomController>(context).kColor,
       ),
-      backgroundColor: kPrimaryColor,
+      backgroundColor: Provider.of<RandomController>(context).kColor,
       body: Consumer<RandomController>(
         builder: (context, value, child) {
           return Center(

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
+import 'package:random_colors/controller/random_controller.dart';
 
 class RandomButton extends StatefulWidget {
   final Function() onpress;
@@ -21,7 +23,7 @@ class _RandomButtonState extends State<RandomButton> {
       width: 70,
       height: 70,
       decoration: BoxDecoration(
-        color: kPrimaryBttnColor,
+        color: Provider.of<RandomController>(context).kColorBttn,
         shape: BoxShape.circle,
         boxShadow: [
           BoxShadow(

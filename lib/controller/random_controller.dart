@@ -1,8 +1,6 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
 
-// TODO FAZER COM QUE O APP RODE ORGANIZADO EM WIDGET SEPARADOS E USANDO PROVIDER
-
 class RandomController extends ChangeNotifier {
   Color kColor = const Color.fromRGBO(152, 255, 130, 1);
   Color kColorBttn = Colors.blue;
