@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:random_colors/controller/random_controller.dart';
 
+import 'components/random_bottom_nav_bar.dart';
 import 'components/random_button.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -43,6 +44,7 @@ class _HomeScreenState extends State<HomeScreen> {
           );
         },
       ),
+      bottomNavigationBar: RandomBottomNavBar(),
     );
   }
 }
