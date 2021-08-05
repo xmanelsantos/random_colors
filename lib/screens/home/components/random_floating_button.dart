@@ -12,7 +12,7 @@ class RandomFloatingButton extends StatelessWidget {
       child: FittedBox(
         child: FloatingActionButton(
           backgroundColor: Colors.white,
-          elevation: 30,
+          elevation: 10,
           onPressed: onpress,
           child: Image.asset(
             'assets/icons/001-random.png',

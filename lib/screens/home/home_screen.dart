@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:random_colors/controller/random_controller.dart';
@@ -15,9 +16,15 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(
+      const SystemUiOverlayStyle(
+          systemNavigationBarColor: Colors.white,
+          systemNavigationBarIconBrightness: Brightness.dark,
+          statusBarIconBrightness: Brightness.light),
+    );
     return Scaffold(
       appBar: AppBar(
-        brightness: Brightness.light,
+        brightness: Brightness.dark,
         title: Text(
           'Random Colors',
           style: GoogleFonts.lato(
@@ -25,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Shadow(
                 offset: const Offset(-5, 2),
                 blurRadius: 8,
-                color: Colors.black.withOpacity(0.45),
+                color: Colors.black.withOpacity(0.25),
               ),
             ],
           ),
