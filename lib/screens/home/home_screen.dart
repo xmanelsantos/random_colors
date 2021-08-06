@@ -46,8 +46,7 @@ class _HomeScreenState extends State<HomeScreen> {
           return Center(
             child: RandomButton(
               onpress: () {
-                Provider.of<RandomController>(context, listen: false)
-                    .randomColor();
+                Navigator.of(context).pushNamed('/details');
               },
             ),
           );
