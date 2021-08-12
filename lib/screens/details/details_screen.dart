@@ -78,23 +78,28 @@ class DetailsScreen extends StatelessWidget {
                   ),
                 ),
                 const Spacer(),
-                Center(
-                  child: Container(
-                    width: size.width * 0.4,
-                    height: size.height * 0.8,
-                    decoration: BoxDecoration(
-                      color: color,
-                      borderRadius: const BorderRadius.only(
-                        topLeft: Radius.circular(10),
-                        bottomLeft: Radius.circular(10),
-                      ),
-                      boxShadow: [
-                        BoxShadow(
-                          offset: const Offset(-4, 3),
-                          blurRadius: 10,
-                          color: Colors.black.withOpacity(0.32),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).pop();
+                  },
+                  child: Center(
+                    child: Container(
+                      width: size.width * 0.4,
+                      height: size.height * 0.8,
+                      decoration: BoxDecoration(
+                        color: color,
+                        borderRadius: const BorderRadius.only(
+                          topLeft: Radius.circular(10),
+                          bottomLeft: Radius.circular(10),
                         ),
-                      ],
+                        boxShadow: [
+                          BoxShadow(
+                            offset: const Offset(-4, 3),
+                            blurRadius: 10,
+                            color: Colors.black.withOpacity(0.32),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),

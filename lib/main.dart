@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:random_colors/controller/random_controller.dart';
-import 'package:random_colors/screens/details/details_screen.dart';
 
-import 'package:random_colors/screens/home/home_screen.dart';
+import 'controller/random_controller.dart';
+import 'screens/details/details_screen.dart';
+import 'screens/home/home_screen.dart';
+import 'screens/login/login_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
         home: HomeScreen(),
         routes: <String, WidgetBuilder>{
           '/details': (BuildContext context) => DetailsScreen(),
+          '/login': (BuildContext context) => LoginScreen(),
         },
       ),
     );

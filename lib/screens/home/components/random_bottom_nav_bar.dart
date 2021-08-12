@@ -23,7 +23,9 @@ class RandomBottomNavBar extends StatelessWidget {
             ),
             IconButton(
               icon: Image.asset('assets/icons/004-man.png'),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pushNamed('/login');
+              },
             ),
           ],
         ),
