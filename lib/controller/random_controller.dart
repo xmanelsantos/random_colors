@@ -2,7 +2,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 
 class RandomController extends ChangeNotifier {
-  Color kColor = const Color.fromRGBO(152, 255, 130, 1);
+  Color kColor = const Color.fromRGBO(249, 168, 38, 1);
   Color kColorBttn = Colors.blue;
   final math.Random _random = math.Random();
 

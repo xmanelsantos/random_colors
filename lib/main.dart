@@ -4,7 +4,7 @@ import 'package:provider/provider.dart';
 import 'controller/random_controller.dart';
 import 'screens/details/details_screen.dart';
 import 'screens/home/home_screen.dart';
-import 'screens/login/login_screen.dart';
+import 'screens/welcome/welcome_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         home: HomeScreen(),
         routes: <String, WidgetBuilder>{
           '/details': (BuildContext context) => DetailsScreen(),
-          '/login': (BuildContext context) => LoginScreen(),
+          '/welcome': (BuildContext context) => WelcomeScreen(),
         },
       ),
     );
