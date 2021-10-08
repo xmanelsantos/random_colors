@@ -1,6 +1,5 @@
 # random_colors
-
-A new Flutter project.
+This my project for learning, I used Provider and simple native Dart elements and  Flutter Widgets, next round is add a possibility API, with Colors names and more description.
 
 ## Getting Started
 
